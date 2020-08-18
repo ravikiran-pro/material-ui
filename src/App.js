@@ -1,27 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ContainerExample from './component/container';
+import CustomStyles from './component/customstyles';
+import GridComponent from './component/grid';
+import ButtonTypes from './component/button';
+import Layout from './component/layout'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          welcome to the party this is me 
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Layout/>
+    </>
   );
 }
-
-export default App;
