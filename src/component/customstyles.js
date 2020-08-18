@@ -1,7 +1,6 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {makeStyles, createMuiTheme} from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
-import Typography from '@material-ui/core/Typography';
 
 const style = makeStyles((theme) => ({
     text:{

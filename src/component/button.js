@@ -22,7 +22,6 @@ export default class ButtonType extends Component{
 }
  
 const ButtonIcon =()=>{
-    const classes=styles();
     return(
         <Grid item xs={6} justify="center" alignItem="center" direction="row">
             <IconButton aria-label="delete" color="secondary">
