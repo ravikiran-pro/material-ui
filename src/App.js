@@ -5,7 +5,7 @@ import React from 'react';
 ///import CustomStyles from './component/customstyles';
 ///import GridComponent from './component/grid';
 ///import ButtonTypes from './component/button';
-///import Layout from './component/layout'
+import Layout from './component/layout'
 
 
 export default function App() {
