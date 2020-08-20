@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import {AppbarComponent} from './component/appbar';
 
 const drawerWidth = 240;
 const Theme = createMuiTheme({
@@ -54,7 +55,7 @@ function DrawerComponent(props) {
     <>
       <CssBaseline />
         {/* replace with appbar or wherever you feel */}
-        <Controller handleDrawerToggle={handleDrawerToggle}/>  
+        < handleDrawerToggle={handleDrawerToggle}/>  
       <nav className={classes.drawer}>
         {/* The implementation can be swapped with js to avoid SEO duplication of links.
             Drawer Tablet changed --- available only below tablet
