@@ -12,6 +12,7 @@ export default function ProfileIcon(props){
             backgroundColor:props.backgroundColor,
             width:parseInt(props.size),
             height:parseInt(props.size),
+            cursor:'pointer',
         },
         icon:{
             fontSize:parseInt(props.iconSize),

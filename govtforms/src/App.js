@@ -1,9 +1,14 @@
 import React,{Component} from 'react';
-import Container from '@material-ui/core/Container';
+
 import CssBaseline from '@material-ui/core/CssBaseline';
+
 import {withStyles} from '@material-ui/core/styles';
+
 import DrawerComponent from './component/drawer';
+import Entry from './component/entry';
+
 import {BrowserRouter,Route,Redirect} from 'react-router-dom';
+
 
 const Styles = theme => ({
     root:{
@@ -25,7 +30,7 @@ class App extends Component{
         return(
             <React.Fragment>
                 <CssBaseline />
-                <Container maxWidth='xl' className={classes.root} disableGutters>
+                <div className={classes.root}>
                 <BrowserRouter>
                     <DrawerComponent/>
                     <CssBaseline/>
@@ -42,7 +47,7 @@ class App extends Component{
                          
                      </main>
                         </BrowserRouter>
-                </Container>
+                </div>
             </React.Fragment>
         )
     }
@@ -51,13 +56,6 @@ class App extends Component{
 export default withStyles(Styles,{withTheme:true})(App);
 
 
-function Entry(){
-    return(
-        <>
-
-        </>
-    )
-}
 
 function Dashboard(){
     return(

@@ -3,11 +3,13 @@ import {makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Hidden from '@material-ui/core/Hidden';
-import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton'
 import TypoGraphy from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+
+import MenuIcon from '@material-ui/icons/Menu';
+
 import TamilNadu from './../image/tamilnadu.png';
 import DPH from './../image/dph.jpg';
 import ProfileIcon from './profile';
@@ -40,7 +42,7 @@ const useStyle = makeStyles((theme)=>({
 export default function AppBarComponent(props){
     const classes=useStyle();
     return(
-        <AppBar position="fixed" className={classes.appBar} elevation={1}>
+        <AppBar position="fixed" className={classes.appBar} elevation={0}>
         <Toolbar disableGutters>
             <Hidden mdUp>
               <IconButton
